@@ -47,14 +47,7 @@ class Scraper
       end
     end
 
-    person_info = {
-      :twitter => twitter,
-      :linkedin => linkedin,
-      :github => github,
-      :blog => blog,
-      :profile_quote => doc.css(".profile_quote").text,
-      :bio => doc.css(".bio_block p").text
-    }
+    person_info = {}
 
     if twitter != ""
       person_info << :twitter => twitter
