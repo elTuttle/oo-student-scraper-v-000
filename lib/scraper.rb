@@ -46,6 +46,16 @@ class Scraper
         blog = temp_string
       end
     end
-    binding.pry
+
+    person_info = {
+      :twitter => twitter
+      :linkedin => linkedin
+      :github => github
+      :blog => blog
+      :profile_quote => doc.css(".profile_quote").text
+      :bio =>
+    }
+    
+    #binding.pry
   end
 end
