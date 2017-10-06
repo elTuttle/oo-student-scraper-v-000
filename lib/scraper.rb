@@ -56,6 +56,12 @@ class Scraper
       :bio => doc.css(".bio_block p").text
     }
 
+    if twitter != ""
+      person_info << :twitter => twitter
+    end  
+    if linkedin != ""
+      person_info << :linkedin => linkedin
+    end 
     #binding.pry
     person_info
   end
