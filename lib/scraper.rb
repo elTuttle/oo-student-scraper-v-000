@@ -48,8 +48,8 @@ class Scraper
     end
 
     person_info = {}
-    profile_quote = doc.css(".profile_quote").text.to_s
-    bio = doc.css(".bio_block p").text.to_s
+    profile_quote = doc.css(".profile_quote").text
+    bio = doc.css(".description-holder p").first.text
 
 
     if twitter != ""
