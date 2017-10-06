@@ -48,11 +48,11 @@ class Scraper
     end
 
     person_info = {
-      :twitter => twitter
-      :linkedin => linkedin
-      :github => github
-      :blog => blog
-      :profile_quote => doc.css(".profile_quote").text
+      :twitter => twitter,
+      :linkedin => linkedin,
+      :github => github,
+      :blog => blog,
+      :profile_quote => doc.css(".profile_quote").text,
       :bio => doc.css(".bio_block p").text
     }
 
