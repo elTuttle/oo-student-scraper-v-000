@@ -58,10 +58,16 @@ class Scraper
 
     if twitter != ""
       person_info << :twitter => twitter
-    end  
+    end
     if linkedin != ""
       person_info << :linkedin => linkedin
-    end 
+    end
+    if github != ""
+      person_info << :github => github
+    end
+    if blog != ""
+      person_info << :blog => blog
+    end
     #binding.pry
     person_info
   end
