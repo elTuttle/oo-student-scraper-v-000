@@ -5,6 +5,8 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    if student_hash.has_key?(:name)
+      :name = student_hash[:name]
     
   end
 
