@@ -35,7 +35,7 @@ class Scraper
     #doc.css(".vitals-text-container .profile-name").text
     #doc.css(".social-icon-container a img").attribute("src").value
     doc.css(".social-icon-container a").each do |person|
-      temp_string = person.values.to_s
+      temp_string = person.values
       if temp_string.include?("twitter")
         twitter = temp_string
       end
