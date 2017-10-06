@@ -56,7 +56,7 @@ class Scraper
       person_info[linkedin] = linkedin
     end
     if github != ""
-      person_info << :github => github
+      person_info[github] = github
     end
     if blog != ""
       person_info << :blog => blog
