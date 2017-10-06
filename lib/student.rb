@@ -6,7 +6,7 @@ class Student
 
   def initialize(student_hash)
     if student_hash.has_key?(:name)
-      :name = student_hash[:name]
+      @name = student_hash[:name]
     end
     puts @name
 
