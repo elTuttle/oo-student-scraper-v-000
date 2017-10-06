@@ -39,7 +39,7 @@ class Scraper
       temp_string = temp_string.scan(/[a-zA-z0-9]+[.]com/)
       temp_string = temp_string.scan(/^[a-zA-z0-9]+/)
       if temp_string == "twitter"
-        twitter = temp_string
+        twitter = person.values
       end
       binding.pry
     end
