@@ -35,7 +35,7 @@ class Scraper
     #doc.css(".vitals-text-container .profile-name").text
     #doc.css(".social-icon-container a img").attribute("src").value
     doc.css(".social-icon-container a").each do |person|
-      temp_string = person.values
+      temp_string = person.values.to_s
       temp_string = temp_string.scan(/[a-zA-z0-9]+[.]com/)
       temp_string = temp_string.scan(/^[a-zA-z0-9]+/)
       if temp_string == "twitter"
