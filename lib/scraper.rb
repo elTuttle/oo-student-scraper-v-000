@@ -48,7 +48,7 @@ class Scraper
     end
 
     person_info = {}
-    profile_quote = doc.css(".profile_quote").text
+    profile_quote = doc.css("div .profile_quote").text
     bio = doc.css(".description-holder p").first.text
 
 
