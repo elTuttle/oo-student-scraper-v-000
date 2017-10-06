@@ -53,7 +53,7 @@ class Scraper
       person_info[twitter] = twitter
     end
     if linkedin != ""
-      person_info << :linkedin => linkedin
+      person_info[linkedin] = linkedin
     end
     if github != ""
       person_info << :github => github
