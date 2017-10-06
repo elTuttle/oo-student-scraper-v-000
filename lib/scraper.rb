@@ -30,7 +30,7 @@ class Scraper
     linkedin = ""
     github = ""
     blog = ""
-    temp_string
+    temp_string =""
     #binding.pry
     #doc.css(".vitals-text-container .profile-name").text
     #doc.css(".social-icon-container a img").attribute("src").value
