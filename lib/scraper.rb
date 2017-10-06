@@ -50,16 +50,16 @@ class Scraper
     person_info = {}
 
     if twitter != ""
-      person_info[:twitter] = twitter.to_s
+      person_info[:twitter] = twitter.join
     end
     if linkedin != ""
-      person_info[:linkedin] = linkedin.to_s
+      person_info[:linkedin] = linkedin.join
     end
     if github != ""
-      person_info[:github] = github.to_s
+      person_info[:github] = github.join
     end
     if blog != ""
-      person_info[:blog] = blog.to_s
+      person_info[:blog] = blog.join
     end
     if doc.css(".profile_quote").text != ""
       person_info[:profile_quote] = doc.css(".profile_quote").text
