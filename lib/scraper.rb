@@ -50,7 +50,7 @@ class Scraper
     person_info = {}
     profile_quote = doc.css(".profile_quote").text
     bio = doc.css(".bio_block p").text
-    
+
 
     if twitter != ""
       person_info[:twitter] = twitter.join
@@ -65,10 +65,10 @@ class Scraper
       person_info[:blog] = blog.join
     end
     if profile_quote != ""
-      person_info[:profile_quote] = doc.css(".profile_quote").text
+      person_info[:profile_quote] = profile_quote
     end
     if bio != ""
-      person_info[:bio] = doc.css(".bio_block p").text
+      person_info[:bio] = bio
     end
     binding.pry
     person_info
