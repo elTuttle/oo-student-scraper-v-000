@@ -68,6 +68,12 @@ class Scraper
     if blog != ""
       person_info << :blog => blog
     end
+    if doc.css(".profile_quote").text != ""
+      person_info << :profile_quote => doc.css(".profile_quote").text
+    end
+    if doc.css(".bio_block p").text != ""
+      person_info << :bio => doc.css(".bio_block p").text
+    end
     #binding.pry
     person_info
   end
