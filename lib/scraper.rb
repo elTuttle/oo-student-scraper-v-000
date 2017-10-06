@@ -57,5 +57,6 @@ class Scraper
     }
 
     #binding.pry
+    person_info
   end
 end
