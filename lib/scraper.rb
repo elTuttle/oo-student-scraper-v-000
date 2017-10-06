@@ -37,6 +37,7 @@ class Scraper
     doc.css(".social-icon-container a").each do |person|
       temp_string = person.values
       if temp_string.include?("twitter")
+        twitter = person.values
       end
       binding.pry
     end
