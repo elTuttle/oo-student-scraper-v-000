@@ -67,7 +67,7 @@ class Scraper
     if doc.css(".bio_block p").text != ""
       person_info[:bio] = doc.css(".bio_block p").text
     end
-    #binding.pry
+    binding.pry
     person_info
   end
 end
