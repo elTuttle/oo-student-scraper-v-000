@@ -33,6 +33,8 @@ class Student
       @profile_quote = student_hash[:profile_quote]
     end
 
+    @@all << self
+
   end
 
   def self.create_from_collection(students_array)
@@ -70,6 +72,6 @@ class Student
   end
 
   def self.all
-
+    @@all
   end
 end
