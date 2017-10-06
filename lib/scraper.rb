@@ -45,8 +45,7 @@ class Scraper
       else
         blog = temp_string
       end
-      binding.pry
     end
-
+    binding.pry
   end
 end
