@@ -53,9 +53,9 @@ class Scraper
       :github => github
       :blog => blog
       :profile_quote => doc.css(".profile_quote").text
-      :bio =>
+      :bio => doc.css(".bio_block p").text
     }
-    
+
     #binding.pry
   end
 end
