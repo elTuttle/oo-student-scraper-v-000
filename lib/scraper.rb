@@ -70,7 +70,7 @@ class Scraper
     if bio != ""
       person_info[:bio] = bio
     end
-    binding.pry
+
     person_info
   end
 end
