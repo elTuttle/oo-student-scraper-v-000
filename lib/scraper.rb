@@ -35,9 +35,9 @@ class Scraper
     #doc.css(".vitals-text-container .profile-name").text
     #doc.css(".social-icon-container a img").attribute("src").value
     doc.css(".social-icon-container a").each do |person|
-      temp_string = person.attribute("src").value
-      if temp_string.include?("twitter")
-      end
+      #temp_string = person.attribute("src").value
+      #if temp_string.include?("twitter")
+      #end
       binding.pry
     end
 
